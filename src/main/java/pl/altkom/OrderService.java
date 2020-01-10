@@ -1,4 +1,4 @@
-package soft.dev.academy.spring;
+package pl.altkom;
 
 public interface OrderService {
 

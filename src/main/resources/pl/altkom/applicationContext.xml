@@ -5,25 +5,25 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "shop1" class = "soft.dev.academy.spring.Shop">
+    <bean id = "shop1" class = "pl.altkom.Shop">
         <property name = "name" value = "Biedronka test"/>
     </bean>
 
-    <bean id="shop2" class="soft.dev.academy.spring.Shop" scope="prototype">
+    <bean id="shop2" class="pl.altkom.Shop" scope="prototype">
         <property name="name" value="Piotr i Pawel"/>
     </bean>
 
-    <bean id="shopBasket" class="soft.dev.academy.spring.ShopBasket">
+    <bean id="shopBasket" class="pl.altkom.ShopBasket">
         <constructor-arg name="name" value="moj koszyk"/>
     </bean>
 
-    <bean id="orderDao" class="soft.dev.academy.spring.OrderDaoImpl">
+    <bean id="orderDao" class="pl.altkom.OrderDaoImpl">
     </bean>
 
-    <bean id="orderDaoInMemory" class="soft.dev.academy.spring.OrderDaoInMemoryImpl">
+    <bean id="orderDaoInMemory" class="pl.altkom.OrderDaoInMemoryImpl">
     </bean>
 
-    <bean id="orderService" class="soft.dev.academy.spring.OrderServiceImpl">
+    <bean id="orderService" class="pl.altkom.OrderServiceImpl">
         <property name="orderDao" ref="orderDaoInMemory"/>
     </bean>
 

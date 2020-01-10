@@ -1,4 +1,4 @@
-package soft.dev.academy.spring;
+package pl.altkom;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;

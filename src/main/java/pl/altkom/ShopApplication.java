@@ -1,4 +1,4 @@
-package soft.dev.academy.spring;
+package pl.altkom;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -8,7 +8,7 @@ public class ShopApplication {
     public static void main(String[] args) {
 	// write your code here
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
-                "soft/dev/academy/spring/applicationContext.xml");
+                "pl/altkom/applicationContext.xml");
         Shop shop1=(Shop)applicationContext.getBean("shop1");
         System.out.println(shop1.getName());
         Shop shop2 = (Shop)applicationContext.getBean("shop2");

@@ -1,4 +1,4 @@
-package soft.dev.academy.spring;
+package pl.altkom;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
