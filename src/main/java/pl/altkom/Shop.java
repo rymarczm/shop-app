@@ -1,5 +1,8 @@
 package pl.altkom;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Shop {
 
     private String name;
